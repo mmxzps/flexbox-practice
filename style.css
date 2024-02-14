@@ -1,0 +1,38 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+}
+
+#container div {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row-reverse;
+    /*den justerar efter vad flex-direction är satt till. typ horisontellt/vertikalt beroende på */
+    justify-content: space-evenly;
+    /*den justerar tvärtemot flex-direction. typ horisontellt/vertikalt beroende på */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dev-3 {
+    /*den görs på child*/
+    /* align-self: self-end; */
+    flex-grow: 2;
+}
